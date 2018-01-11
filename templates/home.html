@@ -8,15 +8,16 @@
   <body>
 
     <div class="frame_container">
-      <div class="inner_frame_container">
-        {% for movie in movies %}
-          <div class="movie_cards">
-            <div class="movie_poster"></div>
-            <div class="movie_desp"> {{ movie }} </div>
-          </div>
-        {% endfor %}
+      <div class="search_box_area">
+        <div class="center_search">
+          <form class="" action="{{ url_for("show_popcorns") }}" method="post">
+            <input type="text" name="search_box" value="" class="search_field">
+            <input type="submit" name="search" value="search" class="search_btn">
+          </form>
+        </div>
       </div>
 
+      {% block body %}{% endblock %}
     </div>
 
 
