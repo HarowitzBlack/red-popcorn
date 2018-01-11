@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HHH</title>
+    <link href="cardslider.css" rel="stylesheet">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery.cardslider.min.js"></script>
+
+    <style media="screen">
+
+    @import url('https://fonts.googleapis.com/css?family=Bungee');
+
+      .mainFrame{
+        width: 1000px;
+        height: 500px;
+        margin: 0px auto;
+      }
+
+      .huge_text_container{
+        width: 900px;
+        height: 500px;
+        background-color: #fff;
+        margin: 0px auto;
+        position: relative;
+        top:70px;
+      }
+
+      .huge_text{
+        position: absolute;
+        font-size: 65px;
+        font-style: normal;
+        font-weight: bold;
+        font-family: 'Bungee', cursive;
+        background: -webkit-linear-gradient(#f4428c, #580f82);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       z-index: 1;
+      }
+
+      .seek_movies{
+        position: relative;
+        width: 150px;
+        height: 45px;
+        border-radius: 7px;
+        border: 1px solid #580f82 ;
+        background-color: #fff;
+        color:#580f82;
+        cursor: pointer;
+        transition: 0.2s;
+        box-shadow: 1px 2px 4px #aaa;
+        top:350px;
+      }
+
+      .seek_movies:hover{
+
+        border-radius: 7px;
+        border: 1px solid #1ec996 ;
+        background-color: #1ec996;
+        color:#fff;
+        transition: 0.2s;
+        box-shadow: 1px 1px 2px #aaa;
+      }
+
+      .poster{
+        width: 250px;
+        height: 350px;
+        background-color: #f9f9f9;
+        position: absolute;
+        top:-10px;
+        left:420px;
+        z-index: 0;
+        border-radius: 7px;
+        box-shadow: 0px 35px 35px #777;
+        transition: 0.3s;
+
+      }
+
+      .poster:hover{
+        transform: scale(0.9,0.9);
+        box-shadow: 0px 35px 35px #777;
+        transition: 0.3s;
+      }
+
+      .img1{
+        background-image: url("https://i.pinimg.com/736x/64/1d/9d/641d9de001135c8dd5c9110b0401eb95--classic-movie-posters-classic-movies.jpg");
+        background-size: 100%;
+
+      }
+
+      .img2{
+
+        background-image: url("https://i.pinimg.com/736x/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02--classic-poster-classic-movies-posters.jpg");
+        background-size: 100%;
+      }
+
+      .img3{
+
+        background-image: url("https://fontmeme.com/images/The-Godfather-Poster.jpg");
+        background-size: 100%;
+      }
+
+      .img4{
+
+        background-image: url("http://cafmp.com/wp-content/uploads/2012/11/Avatar-608x900.jpg");
+        background-size: 100%;
+      }
+
+      .img5{
+
+        background-image: url("http://dl9fvu4r30qs1.cloudfront.net/3e/23/4a03b0094776ae48a84ea18dab5f/the-martian-poster.jpg");
+        background-size: 100%;
+      }
+
+      .my-cardslider{
+        background-color: #fff;
+        width: 900px;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="mainFrame">
+      <div class="huge_text_container">
+        <p class="huge_text"> EYES UP,<br> MOUTH SHUT.<br>JUST FEEL</p>
+        <div class="my-cardslider">
+        	<ul>
+        		<li>  <div class="poster img1"></div></li>
+            <li>  <div class="poster img2"></div></li>
+            <li>  <div class="poster img3"></div></li>
+            <li>  <div class="poster img4"></div></li>
+            <li>  <div class="poster img5"></div></li>
+        	</ul>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+  <script>
+  $(function() {
+    $('.my-cardslider').cardslider();
+  });
+  </script>
+
+</html>
