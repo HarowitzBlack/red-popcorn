@@ -1,11 +1,34 @@
-
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+@import url('https://fonts.googleapis.com/css?family=Tenali+Ramakrishna');
 
 body{
-  width:1000px;
+  width:100%;
   height: auto;
-  padding: 25px;
+  padding: 0px;
   margin: 0px auto;
   background-color: #fff;
+}
+
+.logo_container{
+  width: 100%;
+  height: auto;
+  padding: 2px;
+  position: fixed;
+  top:0px;
+  margin: 0px;
+  box-shadow: 1px 2px 4px #aaa;
+  background-color: #fff;
+  font-family: 'Bowlby One SC', cursive;
+  z-index: 3;
+}
+
+.logo_text{
+  width: 200px;
+  height: auto;
+  padding-left:52px;
+  color: #f43838;
+
+
 }
 
 .frame_container{
@@ -49,21 +72,27 @@ body{
 
 .movie_poster{
   width: 100%;
-  height: 70%;
-  background-color: #482;
+  height: 90%;
+  background-color: #f9f9f9;
+  background-image: url("https://uproxx.files.wordpress.com/2017/01/honest-movie-posters-2017-rogue-one_imgur.jpg?quality=100&w=650&h=962");
+  background-size: cover;
 }
 
 .movie_desp{
   width: 100%;
-  height: 30%;
-  background-color: #985;
+  height: 10%;
+  background-color: #f43838;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 20px;
+  padding: 3px;
 }
 
 .display_text{
-  font-family: fantasy;
-  font-size: 20px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 100;
+  color:#f43838;
+  font-family: 'Tenali Ramakrishna', sans-serif;
 }
 
 .search_field{
@@ -112,4 +141,39 @@ body{
   margin: 0px auto;
   text-align: center;
   padding: 20px;
+}
+
+.rate-container{
+  width: 200px;
+  height: 40px;
+  background-color: #fff;
+  position: relative;
+  bottom: -10px;
+  flex-direction: row;
+  display: flex;
+}
+
+.rate_btn{
+  width: 100px;
+  height: auto;
+  padding: 3px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #0084FF;
+  color:#0084FF;
+  margin-top: 5px;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  transition: 0.2s;
+  transform: scale(0.9,0.9);
+}
+
+.rate_btn:hover{
+  transition: 0.2s;
+  transform: scale(1,1);
+  cursor:pointer;
+
+}
+
+.pink{
+  color:#f20e56;
 }

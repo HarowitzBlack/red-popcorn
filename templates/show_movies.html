@@ -1,6 +1,10 @@
 {% extends "home.html" %}
 {% block body %}
 
+
+<script src="https://use.fontawesome.com/277d5f8e30.js"></script>
+
+
 <div class="result_text_container">
   <h1 class="display_text">Showing movies that are similar to {{ search_text }}</h1>
 </div>
@@ -9,7 +13,18 @@
     <div class="movie_cards">
       <div class="movie_poster"></div>
       <div class="movie_desp"> {{ movie }} </div>
+
     </div>
+
+    <div class="rate-container">
+      <div class="rate_btn"><i class="fa fa-heart pink" aria-hidden="true"></i> Like</div>
+      <div class="rate_btn">Dislike</div>
+
+      </div>
+
+    </div>
+
+
   {% endfor %}
 </div>
 

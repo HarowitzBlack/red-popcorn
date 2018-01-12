@@ -5,7 +5,11 @@
     <title>redpopcorn</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
   </head>
+  <div class="logo_container">
+      <p class="logo_text">redpopcorn</p>
+  </div>
   <body>
+
 
     <div class="frame_container">
       <div class="search_box_area">
@@ -17,7 +21,7 @@
         </div>
       </div>
 
-      {% block body %}{% endblock %}
+    {% block body %}{% endblock %}
     </div>
 
 
