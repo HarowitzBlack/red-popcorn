@@ -10,19 +10,13 @@
 </div>
 <div class="inner_frame_container">
   {% for movie in movies %}
+  <div class="movie_card_holder">
     <div class="movie_cards">
       <div class="movie_poster"></div>
       <div class="movie_desp"> {{ movie }} </div>
-
     </div>
+  </div>
 
-    <div class="rate-container">
-      <div class="rate_btn"><i class="fa fa-heart pink" aria-hidden="true"></i> Like</div>
-      <div class="rate_btn">Dislike</div>
-
-      </div>
-
-    </div>
 
 
   {% endfor %}
